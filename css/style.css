@@ -14,32 +14,6 @@ body {
     font-family: "Lato", sans-serif;
 }
 
-.div {
-    background-color: #fff;
-}
-
-
-.parallax {
-    background-image: url(../img/1.1\ pexels-snapwire-.jpg);
-    min-height: 100vh;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.text {
-    color: #fff;
-    font-size: 36px;
-    background-color: rgba(131, 131, 131, 0.507);
-    padding: 18px;
-    letter-spacing: 10px;
-}
-
 h3 {
     text-align: center;
     padding-top: 50px;
@@ -62,6 +36,93 @@ p {
     color: rgba(51, 51, 51, 0.507);
     margin: 0;
 }
+
+a {
+    color: inherit;
+    text-decoration: none;
+    transition: 2s;
+}
+
+
+
+/*Class*/
+.div {
+    background-color: #fff;
+}
+
+.back {
+    transform: rotateY(180deg);
+    color: rgba(245, 255, 255, 0.89);
+    color: #fff;
+    font-size: 36px;
+    background-color: rgba(131, 131, 131, 0.507);
+    padding: 18px;
+    letter-spacing: 10px;
+    transition: 1.5s;
+    border-radius: 5px;
+}
+
+
+
+/*
+.front:hover {
+    transform: rotateY(180deg);
+}
+*/
+.parallax {
+    background-image: url(../img/1.1\ pexels-snapwire-.jpg);
+    min-height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.parallax a {
+    position: relative;
+    transform-style: preserve-3d;
+    transition: 2s;
+
+}
+
+.parallax a:hover {
+    transform: rotateY(180deg);
+    margin-bottom: 150px;
+    
+}
+
+.text {
+    color: #fff;
+    font-size: 36px;
+    background-color: rgba(131, 131, 131, 0.507);
+    padding: 18px;
+    letter-spacing: 10px;
+    transition: 1.5s;
+}
+
+/*.text:hover{
+    border-radius: 25px;
+}*/
+
+.lado {
+    backface-visibility: hidden;
+
+}
+
+/*
+.text:hover {
+    color: rgb(26, 143, 179);
+    background-color: rgba(245, 255, 255, 0.89);
+    transition: 1.5s;
+    border-radius: 35px;
+
+}*/
+
+
 
 .parallaxdemo {
     background-image: url(../img/4\ pexels-cottonbro-.jpg);
